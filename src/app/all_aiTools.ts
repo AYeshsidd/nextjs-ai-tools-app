@@ -109,7 +109,7 @@ It's widely used in education, customer support, content creation, and software 
     name: 'QuillBot',
     description: 'AI tool for paraphrasing and improving your writing.',
     link: 'https://quillbot.com',
-    image: '/quil.png',
+    image: '/Quil.png',
     details:`Chatgpt is an AI chatbot developed by OpenAI that uses a large language model to understand and generate human-like text.It can 
   answer questions, write content, help with coding, translate languages, and more.Built on GPT (Generative Pre-trained Transformer). It was trained on a massive dataset from the internet.
 It works by predicting the next word in a sentence based on the context provided.
