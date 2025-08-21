@@ -1,7 +1,14 @@
 import { IoNavigate } from "react-icons/io5";
 import { allTools } from "../all_aiTools";
 import Image from "next/image";
-
+export interface Tool {
+  slug:string, 
+  name: string;
+  description: string;
+  link: string;
+  image: string;
+  details: string
+}
 
    type Props = {params: { tools_id: string };
 };

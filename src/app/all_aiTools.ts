@@ -21,8 +21,6 @@ It works by predicting the next word in a sentence based on the context provided
 ChatGPT has multiple versions like GPT-3.5 and GPT-4, with increasing accuracy and reasoning.
 It's widely used in education, customer support, content creation, and software development.
 .`
-
-
   },
   {
 
