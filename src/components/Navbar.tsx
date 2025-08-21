@@ -25,12 +25,12 @@ export default function Header(){
         // this function works on cliking button
     }
     return(
-        <div>
-            <div className="flex flex-col md:flex-row md:justify-between p-10">
+        <div className="">
+            <div className="flex flex-row md:justify-between md:p-10 p-2">
 
             <div className="flex text-white h-12">
-            <FaConnectdevelop className="text-cyan-400 md:text-7xl text-6xl"/>
-        <span className={`${orbitron.className} mx-4 my-3 md:text-3xl text-xl text-blue-400`}> future Tools</span>
+            <FaConnectdevelop className="text-cyan-400 md:text-7xl text-5xl top-3 md:top-0 relative"/>
+        <span className={`${orbitron.className} mx-2 my-3 md:text-3xl text-2xl text-blue-400`}> future Tools</span>
         
              </div>
             
@@ -44,14 +44,14 @@ export default function Header(){
 
             <button onClick={buttonstate_Flip}className="lg:hidden ">
                 {
-                navbar ? (<GiHamburgerMenu className="text-white sm:mx-8 sm:my-1 mx-28 my-10 text-xl " />)
-                : (<GiHamburgerMenu className="text-white sm:mx-8 sm:my-1 mx-28 text-xl my-10"/>)
+                navbar ? (<GiHamburgerMenu className="text-white sm:mx-8 sm:my-1 mx-28 my-10 text-2xl " />)
+                : (<GiHamburgerMenu className="text-white sm:mx-8 sm:my-1 mx-28 text-2xl my-10"/>)
                 }
 
             </button>
             </div>
   {navbar && (
-            <div className={`${raleway.className} lg:hidden flex flex-col sm:flex-row sm:justify-center sm:space-x-7 bg-gradient-to-r from-[#0f0f0f] to-[#1e3a8a] shadow-md text-white sm:my-6 -my-5 space-y-3 p-2  `}>
+            <div className={`${raleway.className} lg:hidden mb-8 flex flex-col sm:flex-row sm:justify-center sm:space-x-7 bg-gradient-to-r from-[#0f0f0f] to-[#1e3a8a] shadow-md text-white sm:my-6 -my-5 space-y-3 p-2  `}>
                 <Link href = "/"><span className="hover:cursor-pointer">Home</span></Link>
                 <Link href = "addToday"><span className="hover:cursor-pointer" >Added Today</span></Link>
                 <Link href = "News"><span className="hover:cursor-pointer">AI News</span></Link>

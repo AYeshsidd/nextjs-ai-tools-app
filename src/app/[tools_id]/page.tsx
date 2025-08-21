@@ -21,7 +21,7 @@ export default function Dynamic_Tools({params}:{params: {tools_id: string } }){
 <a
   href={show_Tools.link}
   target="_blank"
-  className="lg:mx-12 my-5 lg:w-64 h-12 flex items-center justify-center gap-2 bg-cyan-300 rounded-2xl text-blue-600">
+  className="lg:mx-12 my-5 lg:w-64 h-12 flex items-center justify-center gap-2 bg-cyan-300 hover:shadow-2xl rounded-2xl text-blue-600">
   Visit Site
   <IoNavigate  />
 </a>

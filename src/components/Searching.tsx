@@ -2,7 +2,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { allTools } from "@/app/all_aiTools"
-import { useState,useEffect } from "react"
+import { useState } from "react"
 
 
 export default function Search(){
@@ -18,14 +18,6 @@ const handlemenu = () =>{
     
 }
 
-// useEffect (() => {
-//     if(search.trim()!== ''){
-//          show_menu(true)
-//     }
-// },
-// // [search]
-// )
-
 return(
         <div>
             
@@ -39,8 +31,7 @@ return(
           
             <button onClick={handlemenu}>
                 
-                {/* <FaCaretDown className="text-black relative right-10 text-xl cursor-pointer text-center"/>
-                 */}
+                 
               </button>
             </div>
 
@@ -55,7 +46,7 @@ return(
             
             handlingSearches.map((tool) => (
                 <div id="card" key={tool.name} className=" text-white rounded-xl flex p-3 border-cyan-900 shadow-2xl border-2 hover:shadow-gray-400  duration-150 hover:scale-105 transition-transform">
-          <Link href={tool.slug} target="_blank">
+          <Link href={tool.slug} target="">
              <Image src={tool.image} alt={tool.slug} width={300} height={70} className=" rounded mb-4 w-full "></Image>  
             
             <div className="p-4 rounded-xl bg-gray-900  border-1 border-gray-500 ">
@@ -82,7 +73,6 @@ return(
 
     </div>
 )}
-            
         </div>
     )
 }

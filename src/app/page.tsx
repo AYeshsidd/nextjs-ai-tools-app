@@ -12,7 +12,7 @@ export default function Home(){
   
   return(
   <>
-   <h1 className={`${raleway.className} text-white  md:tracking-wider md:text-center md:text-4xl sm:text-3xl lg:px-76 mt-7 px-5 text-2xl md:my-6 `}>
+   <h1 className={`${raleway.className} text-white md:tracking-wider md:text-center md:text-4xl text-2xl sm:text-3xl lg:px-76 md:mt-7 px-5  `}>
     "FutureTools Collects & Organizes All The Best AI Tools So YOU Too Can Become Superhuman!"</h1>
   
   <Search />
