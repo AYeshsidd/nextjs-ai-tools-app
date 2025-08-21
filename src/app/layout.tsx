@@ -1,28 +1,9 @@
-import { allTools } from "./all_aiTools";
-import Dynamic_Tools from "./[tools_id]/page";
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Navbar";
 import { Orbitron } from 'next/font/google'
 
 
-const orbitron = Orbitron({
-  weight: ['400', '600'],
-  subsets: ['latin'],
-  display: 'swap',
-})
-
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: `FutureTools.io`,
