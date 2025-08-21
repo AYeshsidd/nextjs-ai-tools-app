@@ -10,11 +10,12 @@ export interface Tool {
   details: string
 }
 
-   type Props = {params: { tools_id: string };
+   type Props = {
+  params: Promise<{ tools_id: string }>;
 };
 
-export default function Dynamic_Tools({ params }: Props) {
-  const { tools_id } = params;
+export default async function Dynamic_Tools({ params }: Props) {
+  const { tools_id } = await params;
 
   const show_Tools = allTools.find((item) => item.slug === tools_id);
 
