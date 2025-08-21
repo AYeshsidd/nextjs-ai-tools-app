@@ -3,11 +3,16 @@ import { allTools } from "../all_aiTools";
 import Image from "next/image";
 
 
-export default function Dynamic_Tools({params}:{params: {tools_id: string } }){
-  
-    const show_Tools = allTools.find((item) => item.slug === params.tools_id) //tools_id is a file name
-   if(!show_Tools) return <div className="text-white">TOOL NOT FOUND ❗</div>
+   type Props = {params: { tools_id: string };
+};
 
+export default function Dynamic_Tools({ params }: Props) {
+  const { tools_id } = params;
+
+  const show_Tools = allTools.find((item) => item.slug === tools_id);
+
+  if (!show_Tools) return <div className="text-white">TOOL NOT FOUND ❗</div>
+;
     return(        
         <>
         <div className="bg-sky-300 w-full">
@@ -21,7 +26,7 @@ export default function Dynamic_Tools({params}:{params: {tools_id: string } }){
 <a
   href={show_Tools.link}
   target="_blank"
-  className="lg:mx-12 my-5 lg:w-64 h-12 flex items-center justify-center gap-2 bg-cyan-300 hover:shadow-2xl rounded-2xl text-blue-600">
+  className="lg:mx-12 my-5 lg:w-64 h-12 flex items-center justify-center gap-2 bg-cyan-300 rounded-2xl hover:shadow-xl text-blue-600">
   Visit Site
   <IoNavigate  />
 </a>
