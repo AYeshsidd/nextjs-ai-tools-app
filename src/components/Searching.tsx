@@ -45,14 +45,14 @@ return(
         {handlingSearches.length > 0 ? (
             
             handlingSearches.map((tool) => (
-                <div id="card" key={tool.name} className=" text-white rounded-xl flex p-3 border-cyan-900 shadow-2xl border-2 hover:shadow-gray-400  duration-150 hover:scale-105 transition-transform">
+                <div id="card" key={tool.name} className=" text-white rounded-xl flex p-3 border-gray-800 shadow-2xl border-2 hover:shadow-gray-400  duration-150 hover:scale-105 transition-transform">
           <Link href={tool.slug} target="">
              <Image src={tool.image} alt={tool.slug} width={300} height={70} className=" rounded mb-4 w-full "></Image>  
             
-            <div className="p-4 rounded-xl bg-gray-900  border-1 border-gray-500 ">
-            <p className="text-amber-200  "> {tool.name}</p>
-            <p className="text-white taxt-xs font-serif"> {tool.description}</p>
-            <p className="text-cyan-400">{tool.link}</p> 
+            <div className="p-4 rounded-xl bg-gray-900 ">
+            <p className="text-base mb-1"> {tool.name}</p>
+            <p className="text-gray-400 text-xs font-serif mb-1"> {tool.description}</p>
+            <p className="text-gray-200 text-sm">{tool.link}</p> 
             </div>
           </Link>
           
