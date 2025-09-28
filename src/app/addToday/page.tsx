@@ -35,7 +35,8 @@ export default function Added_today() {
           {addedToday.map((tool) => (
             <li key={tool.slug}>{tool.name}</li>
           ))}
-        </ul> */}
+          </ul> */}
+          <p className="text-white font-mono text-sm mx-24 my-5">Showing 3 Total Tools.</p>  
          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 p-4 md:mx-24">
 
         {addedToday.length > 0 ? (
@@ -53,7 +54,6 @@ export default function Added_today() {
           </Link>
           
         </div>
-                
               ))
               
             ) : (
